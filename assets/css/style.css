@@ -23,7 +23,7 @@ a {
 .margin-container {
   margin: auto;
   position: relative;
-  width: 1000px; }
+  width: 1050px; }
 
 .navbar {
   width: 100%;
@@ -54,7 +54,8 @@ a {
   background: #cb0000;
   color: white;
   padding: 10px 15px;
-  letter-spacing: 3px; }
+  letter-spacing: 3px;
+  cursor: pointer; }
 
 #homebg-area {
   width: 100%;
@@ -62,7 +63,6 @@ a {
   margin: 0; }
 
 #homebg {
-  width: 100%;
   position: absolute;
   z-index: -10;
   left: 50%;
@@ -78,15 +78,15 @@ a {
   letter-spacing: 1px; }
 
 #tagline {
-  font-size: 37px;
+  font-size: 50px;
   color: #376531;
   position: relative;
-  padding-top: 180px; }
+  padding-top: 120px; }
 
 #questions {
   color: #376531;
   width: 500px;
-  margin-top: 30px; }
+  margin-top: 50px; }
 
 #getstarted-btn {
   top: 20px;
