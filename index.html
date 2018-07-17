@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <title>You3Dit</title>
+  </head>
+  <body>
+
+    <div class="navbar bold">
+      <a href="#"><img src="assets/img/logoblackY3DI.png" alt="" href="#" id="navbarlogo"></a>
+      <a href="#signin" class="nav-links btn" id="signin-btn">SIGN IN</a>
+      <a href="#marketplace" class="nav-links">MARKETPLACE</a>
+      <a href="#contact" class="nav-links">CONTACT</a>
+      <a href="#news" class="nav-links">ABOUT</a>
+    </div>
+
+    <div id="homebg-area">
+      <img src="assets/img/homebg.svg" alt="" id="homebg">
+      <!-- <img src="assets/img/squares.svg" alt="" id="squares"> -->
+
+      <!-- HOME SECTION -->
+      <div class="margin-container" id="section-home">
+        <div class="bold" id="tagline">
+          Design Engineering & Manufacturing <BR>
+          <div  class="subtagline" style="font-size: 28px;">as a Service </div>
+        </div>
+        <div class="medium subtagline" id="questions">
+          Is your company setting the the industry standard for hardware development?
+        </div>
+        <span class="btn bold" id="getstarted-btn">
+          GET STARTED
+        </span>
+      </div>
+
+
+    </div>
+
+
+    <!-- jQuery Core 3.3.1 -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+
+    <!-- jQuery UI 1.12 -->
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#homebg").css("width", $( window ).width() + $( window ).width()*3.23);
+      });
+    </script>
+
+  </body>
+</html>

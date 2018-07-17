@@ -1,0 +1,94 @@
+html, body {
+  max-width: 100%;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  overflow-x: hidden; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.medium {
+  font-weight: 500; }
+
+.semibold {
+  font-weight: 600; }
+
+.bold {
+  font-weight: 700; }
+
+.reddot {
+  border: 1px red dashed; }
+
+.margin-container {
+  margin: auto;
+  position: relative;
+  width: 1000px; }
+
+.navbar {
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 10;
+  padding: 10px;
+  overflow: hidden;
+  margin: 0; }
+
+.nav-links {
+  position: relative;
+  font-size: 17px;
+  padding-right: 30px;
+  top: 12px;
+  right: 30px;
+  float: right;
+  text-decoration: none;
+  color: #343434;
+  text-align: center; }
+
+.subtagline {
+  position: relative;
+  left: 2px; }
+
+.btn {
+  background: #cb0000;
+  color: white;
+  padding: 10px 15px;
+  letter-spacing: 3px; }
+
+#homebg-area {
+  width: 100%;
+  height: 2000px;
+  margin: 0; }
+
+#homebg {
+  width: 100%;
+  position: absolute;
+  z-index: -10;
+  left: 50%;
+  transform: translateX(-50%); }
+
+#navbarlogo {
+  width: 120px;
+  position: relative;
+  left: 10px; }
+
+#signin-btn {
+  top: 2px;
+  letter-spacing: 1px; }
+
+#tagline {
+  font-size: 37px;
+  color: #376531;
+  position: relative;
+  padding-top: 180px; }
+
+#questions {
+  color: #376531;
+  width: 500px;
+  margin-top: 30px; }
+
+#getstarted-btn {
+  top: 20px;
+  position: relative;
+  letter-spacing: 3px; }
