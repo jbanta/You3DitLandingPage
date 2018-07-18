@@ -2,8 +2,16 @@ $font : 'Montserrat', sans-serif;
 
 // colors
 $black : #343434;
+$gray : #707070;
 $red : #CB0000;
 $darkgreen : #376531;
+
+//button shadow
+@mixin btn-shadow() {
+  -webkit-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.5);
+  box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.5);
+}
 
 html, body {
   max-width: 100%;
@@ -28,7 +36,7 @@ a {
 .margin-container {
   margin: auto;
   position: relative;
-  width: 1000px
+  width: 1050px;
 }
 
 .navbar {
@@ -40,7 +48,6 @@ a {
   padding: 10px;
   overflow: hidden;
   margin: 0;
-
 }
 
 .nav-links {
@@ -61,61 +68,94 @@ a {
 }
 
 .btn {
+  display: inline-block;
   background: $red;
   color: white;
-  padding: 10px 15px;
+  padding: 15px 15px;
   letter-spacing: 3px;
+  font-size: 16px;
   cursor: pointer;
+  @include btn-shadow();
 }
 
+.sectitle {
+  font-size: 35px;
+  color: $darkgreen;
+}
+
+.minititle {
+  color: $darkgreen;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+//HOME SECTION
 #homebg-area {
-  // background: url("../img/homebg.svg");
-  // background-size: cover;
   width: 100%;
-  height: 2000px;
   margin: 0;
+  position: absolute;
 }
-
 #homebg {
+  height: 112%;
   position: absolute;
   z-index: -10;
   left: 50%;
   transform: translateX(-50%);
 }
-
-// #squares {
-//   position: absolute;
-//   width: 500px;
-//   right: -140px;
-//   top: 120px;
-// }
-
 #navbarlogo {
   width: 120px;
   position: relative;
   left: 10px;
 }
-
 #signin-btn {
   top: 2px;
   letter-spacing: 1px;
+  padding: 10px 15px;
 }
-
 #tagline {
   font-size: 58px;
   color: $darkgreen;
   position: relative;
   padding-top: 120px;
 }
-
 #questions {
   color: $darkgreen;
   width: 500px;
   margin-top: 50px;
 }
 
-#getstarted-btn {
-  top: 20px;
-  position: relative;
-  letter-spacing: 3px;
+
+//INFO SECTION
+.info-text {
+  @extend .medium;
+  margin-top: 2px;
+  width: 440px;
+  color: $gray;
+  font-size: 14px;
+  letter-spacing: .5px;
+  line-height: 1.5em;
+}
+
+.graphic-icon {
+
+  position: absolute;
+}
+
+#computer {
+  width: 28%;
+  left: 590px;
+  top: -40px;
+}
+
+#parts {
+  width: 22%;
+  left: 800px;
+  top: 295px;
+
+}
+
+#box {
+  width: 20%;
+  left: 492px;
+  top: 320px;
 }

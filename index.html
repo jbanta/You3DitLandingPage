@@ -2,7 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png">
 
     <!-- Montserrat Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
@@ -19,22 +24,53 @@
     </div>
 
     <div id="homebg-area">
+
+      <!-- graphic background -->
       <img src="assets/img/homebg.svg" alt="" id="homebg">
-      <!-- <img src="assets/img/squares.svg" alt="" id="squares"> -->
 
       <!-- HOME SECTION -->
       <div class="margin-container" id="section-home">
+
         <div class="bold" id="tagline">
           Design Engineering <BR>
           & Manufacturing <BR>
           <div  class="subtagline" style="font-size: 28px;">as a service </div>
         </div>
+
         <div class="medium subtagline" id="questions">
           Is your company setting the the industry standard for hardware development?
         </div>
-        <span class="btn bold" id="getstarted-btn">
+
+        <div class="btn bold" style="margin-top: 30px;">
           GET STARTED
-        </span>
+        </div>
+      </div>
+
+      <!-- INFO SECTION -->
+      <div class="margin-container" id="section-info" style="top: 160px;">
+        <div class="bold sectitle" id="">
+          Rapid Product Development <BR>
+          measured in hours<span style="font-size: 28px;"> ...not years</span>
+        </div>
+
+        <div class="bold minititle" style="margin-top: 70px;">OUR PROCESS</div>
+        <div class="info-text">
+          With top-tier mechanical design engineers and rapid prototyping experts, we provide on-demand,
+          mechanical design engineering and prototyping services.
+        </div>
+
+        <div class="bold minititle" style="margin-top: 20px;">FOR WHO?</div>
+        <div class="info-text">
+          Companies, small businesses and startups who are dynamic and value flexibility,
+          speed and smart execution enabled by the tight integration of design and manufacturing.
+        </div>
+
+        <div class="btn bold" style="margin-top: 70px;"> WORK WITH US </div>
+
+        <!-- GRAPHIC ICONS -->
+        <img src="assets/img/computer-graphic.svg" alt="" class="graphic-icon" id="computer">
+        <img src="assets/img/parts-graphic.svg" alt="" class="graphic-icon" id="parts">
+        <img src="assets/img/box-graphic.svg" alt="" class="graphic-icon" id="box">
       </div>
 
 
@@ -57,7 +93,11 @@
 
     <script type="text/javascript">
       $(document).ready(function(){
-        $("#homebg").css("width", $( window ).width() + $( window ).width()*2.9);
+
+        /*set the height of the area that is within the graphic background
+        to the height of the graphic background */
+        $("#homebg-area").css("height", $("#homebg").height());
+
       });
     </script>
 

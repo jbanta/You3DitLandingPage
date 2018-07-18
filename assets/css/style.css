@@ -8,7 +8,7 @@ a {
   text-decoration: none;
   color: inherit; }
 
-.medium {
+.medium, .info-text {
   font-weight: 500; }
 
 .semibold {
@@ -23,7 +23,7 @@ a {
 .margin-container {
   margin: auto;
   position: relative;
-  width: 1000px; }
+  width: 1050px; }
 
 .navbar {
   width: 100%;
@@ -51,18 +51,33 @@ a {
   left: 2px; }
 
 .btn {
+  display: inline-block;
   background: #cb0000;
   color: white;
-  padding: 10px 15px;
+  padding: 15px 15px;
   letter-spacing: 3px;
-  cursor: pointer; }
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.5); }
+
+.sectitle {
+  font-size: 35px;
+  color: #376531; }
+
+.minititle {
+  color: #376531;
+  letter-spacing: 3px;
+  font-size: 14px; }
 
 #homebg-area {
   width: 100%;
-  height: 2000px;
-  margin: 0; }
+  margin: 0;
+  position: absolute; }
 
 #homebg {
+  height: 112%;
   position: absolute;
   z-index: -10;
   left: 50%;
@@ -75,7 +90,8 @@ a {
 
 #signin-btn {
   top: 2px;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  padding: 10px 15px; }
 
 #tagline {
   font-size: 58px;
@@ -88,7 +104,28 @@ a {
   width: 500px;
   margin-top: 50px; }
 
-#getstarted-btn {
-  top: 20px;
-  position: relative;
-  letter-spacing: 3px; }
+.info-text {
+  margin-top: 2px;
+  width: 440px;
+  color: #707070;
+  font-size: 14px;
+  letter-spacing: .5px;
+  line-height: 1.5em; }
+
+.graphic-icon {
+  position: absolute; }
+
+#computer {
+  width: 28%;
+  left: 590px;
+  top: -40px; }
+
+#parts {
+  width: 22%;
+  left: 800px;
+  top: 295px; }
+
+#box {
+  width: 20%;
+  left: 492px;
+  top: 320px; }
