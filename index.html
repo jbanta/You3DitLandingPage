@@ -15,7 +15,7 @@
   </head>
   <body>
 
-    <div class="navbar bold">
+    <div class="navbar">
       <a href="#"><img src="assets/img/logoblackY3DI.png" alt="" href="#" id="navbarlogo"></a>
       <a href="#signin" class="nav-links btn" id="signin-btn">SIGN IN</a>
       <a href="#marketplace" class="nav-links">MARKETPLACE</a>
@@ -23,59 +23,90 @@
       <a href="#news" class="nav-links">ABOUT</a>
     </div>
 
-    <div id="homebg-area">
+    <div class="container">
 
-      <!-- graphic background -->
-      <img src="assets/img/homebg.svg" alt="" id="homebg">
+      <div id="homebg-area" class="">
 
-      <!-- HOME SECTION -->
-      <div class="margin-container" id="section-home">
+        <!-- graphic background -->
+        <img src="assets/img/homebg.svg" alt="" id="homebg">
 
-        <div class="bold" id="tagline">
-          Design Engineering <BR>
-          & Manufacturing <BR>
-          <div  class="subtagline" style="font-size: 28px;">as a service </div>
+        <!-- HOME SECTION -->
+        <div class="margin-container" id="section-home">
+
+          <div class="" id="tagline">
+            Design Engineering <BR>
+            & Manufacturing <BR>
+            <div  class="subtagline" style="font-size: 28px;">as a service </div>
+          </div>
+
+          <div class="medium subtagline" id="questions">
+            Is your company setting the the industry standard for hardware development?
+          </div>
+
+          <div class="btn" style="margin-top: 30px;">
+            GET STARTED
+          </div>
         </div>
 
-        <div class="medium subtagline" id="questions">
-          Is your company setting the the industry standard for hardware development?
-        </div>
+        <!-- INFO SECTION -->
+        <div class="margin-container" id="section-info" style="top: 160px;">
+          <div class="sectitle" id="">
+            Rapid Product Development <BR>
+            measured in hours<span style="font-size: 28px;"> ...not years</span>
+          </div>
 
-        <div class="btn bold" style="margin-top: 30px;">
-          GET STARTED
+          <div class="minititle" style="margin-top: 70px;">OUR PROCESS</div>
+          <div class="info-text">
+            With top-tier mechanical design engineers and rapid prototyping experts, we provide on-demand,
+            mechanical design engineering and prototyping services.
+          </div>
+
+          <div class="minititle" style="margin-top: 20px;">FOR WHO?</div>
+          <div class="info-text">
+            Companies, small businesses and startups who are dynamic and value flexibility,
+            speed and smart execution enabled by the tight integration of design and manufacturing.
+          </div>
+
+          <div class="btn" style="margin-top: 70px;"> WORK WITH US </div>
+
+          <!-- GRAPHIC ICONS -->
+          <img src="assets/img/computer-graphic.svg" alt="" class="graphic-icon" id="computer">
+          <img src="assets/img/parts-graphic.svg" alt="" class="graphic-icon" id="parts">
+          <img src="assets/img/box-graphic.svg" alt="" class="graphic-icon" id="box">
         </div>
       </div>
 
-      <!-- INFO SECTION -->
-      <div class="margin-container" id="section-info" style="top: 160px;">
-        <div class="bold sectitle" id="">
-          Rapid Product Development <BR>
-          measured in hours<span style="font-size: 28px;"> ...not years</span>
+      <!-- PAST CLIENTS SECTION -->
+      <div class="green-section">
+        <div class="margin-container">
+          <div class="minititle" id="past-clients-title">
+            PAST CLIENTS
+          </div>
         </div>
+      </div>
 
-        <div class="bold minititle" style="margin-top: 70px;">OUR PROCESS</div>
-        <div class="info-text">
-          With top-tier mechanical design engineers and rapid prototyping experts, we provide on-demand,
-          mechanical design engineering and prototyping services.
+      <!-- LOGO SECTION -->
+      <div class="">
+        <div class="margin-container">
+          <div class="" id="logo-title">Trusted by leading innovative companies</div>
+          <div class="logo-container">
+            <img src="assets/img/logos/logo1.png" alt="" class="logos">
+            <img src="assets/img/logos/logo2.png" alt="" class="logos">
+            <img src="assets/img/logos/logo3.png" alt="" class="logos">
+            <img src="assets/img/logos/logo4.png" alt="" class="logos">
+            <img src="assets/img/logos/logo5.png" alt="" class="logos">
+          </div>
+          <div class="logo-container" style="grid-template-columns: 1fr 1fr 1fr 1fr; width: 80%; margin: auto;">
+            <img src="assets/img/logos/logo6.png" alt="" class="logos">
+            <img src="assets/img/logos/logo7.png" alt="" class="logos">
+            <img src="assets/img/logos/logo8.png" alt="" class="logos">
+            <img src="assets/img/logos/logo9.png" alt="" class="logos">
+          </div>
         </div>
-
-        <div class="bold minititle" style="margin-top: 20px;">FOR WHO?</div>
-        <div class="info-text">
-          Companies, small businesses and startups who are dynamic and value flexibility,
-          speed and smart execution enabled by the tight integration of design and manufacturing.
-        </div>
-
-        <div class="btn bold" style="margin-top: 70px;"> WORK WITH US </div>
-
-        <!-- GRAPHIC ICONS -->
-        <img src="assets/img/computer-graphic.svg" alt="" class="graphic-icon" id="computer">
-        <img src="assets/img/parts-graphic.svg" alt="" class="graphic-icon" id="parts">
-        <img src="assets/img/box-graphic.svg" alt="" class="graphic-icon" id="box">
       </div>
 
 
     </div>
-
 
     <!-- jQuery Core 3.3.1 -->
     <script
@@ -96,7 +127,7 @@
 
         /*set the height of the area that is within the graphic background
         to the height of the graphic background */
-        $("#homebg-area").css("height", $("#homebg").height());
+        //$("#homebg-area").css("height", $("#homebg").height());
 
       });
     </script>

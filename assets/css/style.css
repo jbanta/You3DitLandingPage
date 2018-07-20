@@ -8,13 +8,13 @@ a {
   text-decoration: none;
   color: inherit; }
 
-.medium, .info-text {
+.medium, .info-text, #logo-title {
   font-weight: 500; }
 
 .semibold {
   font-weight: 600; }
 
-.bold {
+.bold, .navbar, .btn, .sectitle, .minititle, #tagline {
   font-weight: 700; }
 
 .reddot {
@@ -23,7 +23,8 @@ a {
 .margin-container {
   margin: auto;
   position: relative;
-  width: 1050px; }
+  width: 90%;
+  max-width: 1050px; }
 
 .navbar {
   width: 100%;
@@ -71,13 +72,18 @@ a {
   letter-spacing: 3px;
   font-size: 14px; }
 
+.green-section {
+  background-color: #376531;
+  height: 400px; }
+
 #homebg-area {
   width: 100%;
+  height: 1160px;
   margin: 0;
-  position: absolute; }
+  position: relative; }
 
 #homebg {
-  height: 112%;
+  height: 100%;
   position: absolute;
   z-index: -10;
   left: 50%;
@@ -126,6 +132,27 @@ a {
   top: 295px; }
 
 #box {
-  width: 20%;
-  left: 492px;
+  width: 18%;
+  left: 494px;
   top: 320px; }
+
+#past-clients-title {
+  text-align: center;
+  padding: 40px;
+  color: white; }
+
+#logo-title {
+  font-size: 30px;
+  color: #376531;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 20px; }
+
+.logo-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); }
+
+.logos {
+  max-width: 120px;
+  width: 60%;
+  margin: auto; }

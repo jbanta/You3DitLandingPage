@@ -36,7 +36,8 @@ a {
 .margin-container {
   margin: auto;
   position: relative;
-  width: 1050px;
+  width: 90%;
+  max-width: 1050px;
 }
 
 .navbar {
@@ -48,6 +49,7 @@ a {
   padding: 10px;
   overflow: hidden;
   margin: 0;
+  @extend .bold;
 }
 
 .nav-links {
@@ -75,28 +77,37 @@ a {
   letter-spacing: 3px;
   font-size: 16px;
   cursor: pointer;
+  @extend .bold;
   @include btn-shadow();
 }
 
 .sectitle {
   font-size: 35px;
   color: $darkgreen;
+  @extend .bold;
 }
 
 .minititle {
+  @extend .bold;
   color: $darkgreen;
   letter-spacing: 3px;
   font-size: 14px;
 }
 
+.green-section {
+  background-color: $darkgreen;
+  height: 400px;
+}
+
 //HOME SECTION
 #homebg-area {
   width: 100%;
+  height: 1160px;
   margin: 0;
-  position: absolute;
+  position: relative;
 }
 #homebg {
-  height: 112%;
+  height: 100%;
   position: absolute;
   z-index: -10;
   left: 50%;
@@ -117,6 +128,7 @@ a {
   color: $darkgreen;
   position: relative;
   padding-top: 120px;
+  @extend .bold;
 }
 #questions {
   color: $darkgreen;
@@ -135,27 +147,50 @@ a {
   letter-spacing: .5px;
   line-height: 1.5em;
 }
-
 .graphic-icon {
-
   position: absolute;
 }
-
 #computer {
   width: 28%;
   left: 590px;
   top: -40px;
 }
-
 #parts {
   width: 22%;
   left: 800px;
   top: 295px;
+}
+#box {
+  width: 18%;
+  left: 494px;
+  top: 320px;
+}
+
+// PAST CLIENTS SECTION
+#past-clients-title {
+  text-align: center;
+  padding: 40px;
+  color: white;
+}
+
+// LOGO SECTION
+#logo-title {
+  font-size: 30px;
+  color: $darkgreen;
+  @extend .medium;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+
+.logo-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 
 }
 
-#box {
-  width: 20%;
-  left: 492px;
-  top: 320px;
+.logos {
+  max-width: 120px;
+  width: 60%;
+  margin: auto;
 }
