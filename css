@@ -7,15 +7,13 @@ C:/tools/ruby215/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin/compiler.r
 C:/tools/ruby215/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
 C:/tools/ruby215/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `each'
 C:/tools/ruby215/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-C:/tools/ruby215/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:235:in `watch'
-C:/tools/ruby215/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin.rb:107:in `method_missing'
-C:/tools/ruby215/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/exec.rb:463:in `watch_or_update'
-C:/tools/ruby215/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/exec.rb:326:in `process_result'
-C:/tools/ruby215/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/exec.rb:41:in `parse'
-C:/tools/ruby215/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/exec.rb:21:in `parse!'
-C:/tools/ruby215/lib/ruby/gems/2.1.0/gems/sass-3.2.19/bin/sass:13:in `<top (required)>'
-C:/tools/ruby215/bin/sass:23:in `load'
-C:/tools/ruby215/bin/sass:23:in `<main>'
+C:/tools/ruby215/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:283:in `block in watch'
+C:/tools/ruby215/lib/ruby/gems/2.1.0/gems/sass-3.2.19/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+C:/tools/ruby215/lib/ruby/gems/2.1.0/gems/sass-3.2.19/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+C:/tools/ruby215/lib/ruby/gems/2.1.0/gems/sass-3.2.19/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+C:/tools/ruby215/lib/ruby/gems/2.1.0/gems/sass-3.2.19/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
+C:/tools/ruby215/lib/ruby/gems/2.1.0/gems/sass-3.2.19/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
+C:/tools/ruby215/lib/ruby/gems/2.1.0/gems/sass-3.2.19/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
 */
 body:before {
   white-space: pre;

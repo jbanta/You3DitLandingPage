@@ -12,6 +12,8 @@
     <!-- Montserrat Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
     <title>You3Dit</title>
+
+
   </head>
   <body>
 
@@ -106,6 +108,48 @@
       </div>
 
 
+      <!-- QUOTES -->
+      <div class="quote-carousel" style="margin-top: 50px;">
+
+        <div class="quote-container active" id="q-0">
+          <div class="quotebox">
+            <img src="assets/img/quote.svg" alt="" class="quote-icon">
+            <div class="quote-text ">To see You3Dit in action is magic to a person with a design idea or problem they need solved. Their deep knowledge of design and 3D printing can quickly launch you past all the "impossible" barriers of development and get you across the finish line quickly.</div>
+          </div>
+        </div>
+
+        <div class="quote-container" id="q-1">
+          <div class="quotebox">
+            <img src="assets/img/quote.svg" alt="" class="quote-icon">
+            <div class="quote-text ">You3Dit basically turned the dial on the entire lab up to 11. While there were lots of people capable of building incredibly cool apps, having the You3Dit team there fabricating physical products out of thin air was the highlight of the entire [two-day event].</div>
+          </div>
+        </div>
+
+        <div class="quote-container" id="q-2">
+          <div class="quotebox">
+            <img src="assets/img/quote.svg" alt="" class="quote-icon">
+            <div class="quote-text">You3Dit has inarguably helped shape our product as it stands today. Right from the form factor to detail design, we easily saved about 3 months of iterations by using You3Dit's connections of professional designers and fabricators.</div>
+          </div>
+        </div>
+
+        <div class="quote-container" id="q-2">
+          <div class="quotebox">
+            <img src="assets/img/quote.svg" alt="" class="quote-icon">
+            <div class="quote-text ">You3Dit and their team created a world class prototype of a very unique and disruptive industrial product... You3Dit exceeded our expectations. They made minor changes on a moment's notice... We advise any patent holder or applicant to create a physical prototype from You3DIt.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="margin-container">
+        <div class="indicators">
+          <div class="idot" id="i0"></div>
+          <div class="idot iactive" id="i1"></div>
+          <div class="idot" id="i2"></div>
+          <div class="idot" id="i3"></div>
+        </div>
+      </div>
+
+
     </div>
 
     <!-- jQuery Core 3.3.1 -->
@@ -124,10 +168,52 @@
 
     <script type="text/javascript">
       $(document).ready(function(){
+        let qindex = 0; //which quote is active
+        let activePos = ($(window).width() / 2) - ($(".quote-container").width() / 2); //where quote carousel should relocate
 
-        /*set the height of the area that is within the graphic background
-        to the height of the graphic background */
-        //$("#homebg-area").css("height", $("#homebg").height());
+        /* update active position on page resize */
+        $(window).resize(function() {
+          activePos = ($(window).width() / 2) - ($(".quote-container").width() / 2) - (qindex * $(".quote-container").width());
+          $(".quote-carousel").css("left", activePos);
+        });
+
+        updateActivePos(); //set pos on load
+        function updateActivePos () {
+          // centers current active quote
+          activePos = ($(window).width() / 2) - ($(".quote-container").width() / 2) - (qindex * $(".quote-container").width());
+          $(".quote-carousel").animate({left: activePos}, 500);
+
+          //indicators
+          resetIndicator();
+          $( "#i" + qindex ).addClass("iactive");
+        }
+
+        function resetIndicator() {
+          $( "#i0" ).removeClass("iactive");
+          $( "#i1" ).removeClass("iactive");
+          $( "#i2" ).removeClass("iactive");
+          $( "#i3" ).removeClass("iactive");
+        }
+
+
+        /* Quote Carousel Indicator clicks*/
+        $( "#i0" ).click(function() {
+          qindex = 0;
+          updateActivePos();
+        });
+        $( "#i1" ).click(function() {
+          qindex = 1;
+          updateActivePos();
+        });
+        $( "#i2" ).click(function() {
+          qindex = 2;
+          updateActivePos();
+        });
+        $( "#i3" ).click(function() {
+          qindex = 3;
+          updateActivePos();
+        });
+
 
       });
     </script>

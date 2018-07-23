@@ -8,7 +8,7 @@ a {
   text-decoration: none;
   color: inherit; }
 
-.medium, .info-text, #logo-title {
+.medium, .info-text, #logo-title, .quote-text {
   font-weight: 500; }
 
 .semibold {
@@ -155,3 +155,60 @@ a {
   max-width: 120px;
   width: 60%;
   margin: auto; }
+
+.quote-carousel {
+  width: 100%;
+  white-space: nowrap;
+  position: relative; }
+
+.quote-container {
+  width: 55%;
+  height: 400px;
+  display: inline-block;
+  position: relative; }
+
+.quotebox {
+  display: grid;
+  height: 200px;
+  width: 95%;
+  background-color: #a6d069;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  grid-template-columns: 35px auto; }
+
+.quote-text {
+  white-space: normal;
+  position: relative;
+  color: white;
+  line-height: 25px;
+  padding: 30px 40px 30px 60px; }
+
+.quote-icon {
+  width: 100%;
+  padding: 30px; }
+
+.indicators {
+  width: 150px;
+  position: relative;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
+
+.idot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #afafaf;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: auto;
+  cursor: pointer; }
+
+.iactive {
+  background-color: #a6d069;
+  transition: .5s; }
