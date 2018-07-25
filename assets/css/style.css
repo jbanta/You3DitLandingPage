@@ -14,7 +14,7 @@ a {
 .semibold {
   font-weight: 600; }
 
-.bold, .navbar, .btn, .sectitle, .minititle, #tagline {
+.bold, .navbar, .btn, .sectitle, .minititle, #tagline, #makeithappen, #makeithappen-sub {
   font-weight: 700; }
 
 .reddot {
@@ -167,11 +167,13 @@ a {
   position: relative;
   margin-right: -5px;
   opacity: .3;
-  transition: opacity .5s; }
+  transition: opacity .5s;
+  cursor: pointer; }
 
 .active {
   opacity: 1;
-  transition: .5s; }
+  transition: .5s;
+  cursor: default; }
 
 .quotebox {
   display: grid;
@@ -232,3 +234,16 @@ a {
   font-size: 12px;
   text-align: center;
   margin-top: 10px; }
+
+#makeithappen, #makeithappen-sub {
+  color: white;
+  font-size: 60px;
+  padding-top: 70px; }
+
+#makeithappen-sub-container {
+  display: grid;
+  grid-template-columns: auto auto; }
+
+#makeithappen-sub {
+  font-size: 32px;
+  padding-top: 40px; }

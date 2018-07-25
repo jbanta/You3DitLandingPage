@@ -88,7 +88,7 @@
       </div>
 
       <!-- LOGO SECTION -->
-      <div class="margin-container" style="margin-top: 70px;">
+      <div class="margin-container" style="margin-top: 80px;">
         <div class="" id="logo-title">Trusted by leading innovative companies</div>
         <div class="logo-container">
           <img src="assets/img/logos/logo1.png" alt="" class="logos">
@@ -124,12 +124,12 @@
         <div class="quote-container" id="q1">
           <div class="quotebox">
             <img src="assets/img/quote.svg" alt="" class="quote-icon">
-            <div class="quote-text ">You3Dit basically turned the dial on the entire lab up to 11. While there were lots of people capable of building incredibly cool apps, having the You3Dit team there fabricating physical products out of thin air was the highlight of the entire [two-day event].</div>
+            <div class="quote-text ">You3Dit and their team created a world class prototype of a very unique and disruptive industrial product... You3Dit exceeded our expectations. They made minor changes on a moment's notice... We advise any patent holder or applicant to create a physical prototype from You3DIt. </div>
           </div>
-          <img src="assets/img/quoteppl/justin-128.png" alt="" class="quoteppl">
+          <img src="assets/img/quoteppl/ernest-128.png" alt="" class="quoteppl">
           <div class="quoteppl-text">
-            Justin Lokitz <BR>
-            Strategy Designer for Business Models Inc.
+            Ernest Brown<BR>
+            CEO and Owner of Ernest Brown and Co.
           </div>
         </div>
 
@@ -148,12 +148,12 @@
         <div class="quote-container" id="q3">
           <div class="quotebox">
             <img src="assets/img/quote.svg" alt="" class="quote-icon">
-            <div class="quote-text ">You3Dit and their team created a world class prototype of a very unique and disruptive industrial product... You3Dit exceeded our expectations. They made minor changes on a moment's notice... We advise any patent holder or applicant to create a physical prototype from You3DIt.</div>
+            <div class="quote-text ">You3Dit basically turned the dial on the entire lab up to 11. While there were lots of people capable of building incredibly cool apps, having the You3Dit team there fabricating physical products out of thin air was the highlight of the entire [two-day event].</div>
           </div>
-          <img src="assets/img/quoteppl/ernest-128.png" alt="" class="quoteppl">
+          <img src="assets/img/quoteppl/justin-128.png" alt="" class="quoteppl">
           <div class="quoteppl-text">
-            Ernest Brown<BR>
-            CEO and Owner of Ernest Brown and Co.
+            Justin Lokitz <BR>
+            Strategy Designer for Business Models Inc.
           </div>
         </div>
       </div>
@@ -167,8 +167,22 @@
         </div>
       </div>
 
-      <div class="green-section" style="margin-top: 70px;">
-
+      <!-- LET'S MAKE IT HAPPEN -->
+      <div class="green-section" style="margin-top: 70px; height: 350px;">
+        <div class="margin-container">
+          <div id="makeithappen">
+            Let's make it happen.
+          </div>
+          <div id="makeithappen-sub-container">
+            <div id="makeithappen-sub">
+              Our clients are out #1 priority. <BR>
+              Become one now.
+            </div>
+            <div class="btn" style="position: relative; height: 20px; width: 140px; top: 60px; left: 175px;">
+              CONTACT US
+            </div>
+          </div>
+        </div>
       </div>
 
 
@@ -232,6 +246,24 @@
           updateActivePos();
         });
         $( "#i3" ).click(function() {
+          qindex = 3;
+          updateActivePos();
+        });
+
+        /* Quote Carousel quote-container clicks*/
+        $( "#q0" ).click(function() {
+          qindex = 0;
+          updateActivePos();
+        });
+        $( "#q1" ).click(function() {
+          qindex = 1;
+          updateActivePos();
+        });
+        $( "#q2" ).click(function() {
+          qindex = 2;
+          updateActivePos();
+        });
+        $( "#q3" ).click(function() {
           qindex = 3;
           updateActivePos();
         });
