@@ -193,7 +193,6 @@ a {
   color: $darkgreen;
   @extend .medium;
   text-align: center;
-  padding-top: 50px;
   margin-bottom: 20px;
 }
 
@@ -219,15 +218,15 @@ a {
 }
 
 .quote-container {
-  width: 55%;
+  width: 50%;
   height: 400px;
   display: inline-block;
   position: relative;
+  margin-right: -5px;
 }
 
 .quotebox {
   display: grid;
-  height: 200px;
   width: 95%;
   background-color: $lightgreen;
   @include rounded-corner();
@@ -243,7 +242,7 @@ a {
   color: white;
   @extend .medium;
   line-height: 25px;
-  padding: 30px 40px 30px 60px;
+  padding: 40px 40px 40px 60px;
 }
 
 .quote-icon {
@@ -272,4 +271,19 @@ a {
 .iactive {
   background-color: $lightgreen;
   transition: .5s;
+}
+
+.quoteppl {
+  @include circle();
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  margin-top: 40px;
+}
+
+.quoteppl-text {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
 }

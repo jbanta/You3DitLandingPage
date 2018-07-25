@@ -144,7 +144,6 @@ a {
   font-size: 30px;
   color: #376531;
   text-align: center;
-  padding-top: 50px;
   margin-bottom: 20px; }
 
 .logo-container {
@@ -162,14 +161,14 @@ a {
   position: relative; }
 
 .quote-container {
-  width: 55%;
+  width: 50%;
   height: 400px;
   display: inline-block;
-  position: relative; }
+  position: relative;
+  margin-right: -5px; }
 
 .quotebox {
   display: grid;
-  height: 200px;
   width: 95%;
   background-color: #a6d069;
   -moz-border-radius: 10px;
@@ -185,7 +184,7 @@ a {
   position: relative;
   color: white;
   line-height: 25px;
-  padding: 30px 40px 30px 60px; }
+  padding: 40px 40px 40px 60px; }
 
 .quote-icon {
   width: 100%;
@@ -212,3 +211,18 @@ a {
 .iactive {
   background-color: #a6d069;
   transition: .5s; }
+
+.quoteppl {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  margin-top: 40px; }
+
+.quoteppl-text {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px; }
