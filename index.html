@@ -109,7 +109,7 @@
       <!-- QUOTES -->
       <div class="quote-carousel" style="margin-top: 80px;">
 
-        <div class="quote-container" id="q-0">
+        <div class="quote-container" id="q0">
           <div class="quotebox">
             <img src="assets/img/quote.svg" alt="" class="quote-icon">
             <div class="quote-text ">To see You3Dit in action is magic to a person with a design idea or problem they need solved. Their deep knowledge of design and 3D printing can quickly launch you past all the "impossible" barriers of development and get you across the finish line quickly.</div>
@@ -121,7 +121,7 @@
           </div>
         </div>
 
-        <div class="quote-container" id="q-1">
+        <div class="quote-container" id="q1">
           <div class="quotebox">
             <img src="assets/img/quote.svg" alt="" class="quote-icon">
             <div class="quote-text ">You3Dit basically turned the dial on the entire lab up to 11. While there were lots of people capable of building incredibly cool apps, having the You3Dit team there fabricating physical products out of thin air was the highlight of the entire [two-day event].</div>
@@ -133,7 +133,7 @@
           </div>
         </div>
 
-        <div class="quote-container" id="q-2">
+        <div class="quote-container" id="q2">
           <div class="quotebox">
             <img src="assets/img/quote.svg" alt="" class="quote-icon">
             <div class="quote-text">You3Dit has inarguably helped shape our product as it stands today. Right from the form factor to detail design, we easily saved about 3 months of iterations by using You3Dit's connections of professional designers and fabricators.</div>
@@ -145,7 +145,7 @@
           </div>
         </div>
 
-        <div class="quote-container" id="q-2">
+        <div class="quote-container" id="q3">
           <div class="quotebox">
             <img src="assets/img/quote.svg" alt="" class="quote-icon">
             <div class="quote-text ">You3Dit and their team created a world class prototype of a very unique and disruptive industrial product... You3Dit exceeded our expectations. They made minor changes on a moment's notice... We advise any patent holder or applicant to create a physical prototype from You3DIt.</div>
@@ -158,7 +158,7 @@
         </div>
       </div>
 
-      <div class="margin-container" style="margin-top: 20px;">
+      <div class="margin-container" style="margin-top: 50px;">
         <div class="indicators">
           <div class="idot" id="i0"></div>
           <div class="idot iactive" id="i1"></div>
@@ -205,16 +205,17 @@
           activePos = ($(window).width() / 2) - ($(".quote-container").width() / 2) - (qindex * $(".quote-container").width());
           $(".quote-carousel").animate({left: activePos}, 500);
 
-          //indicators
+          //indicators ad opacity
           resetIndicator();
           $( "#i" + qindex ).addClass("iactive");
+          $( "#q" + qindex ).addClass("active");
         }
 
-        function resetIndicator() { //turn off all indicators
-          $( "#i0" ).removeClass("iactive");
-          $( "#i1" ).removeClass("iactive");
-          $( "#i2" ).removeClass("iactive");
-          $( "#i3" ).removeClass("iactive");
+        function resetIndicator() { //turn off all indicators and opacities
+          $( "#i0" ).removeClass("iactive"); $( "#q0" ).removeClass("active");
+          $( "#i1" ).removeClass("iactive"); $( "#q1" ).removeClass("active");
+          $( "#i2" ).removeClass("iactive"); $( "#q2" ).removeClass("active");
+          $( "#i3" ).removeClass("iactive"); $( "#q3" ).removeClass("active");
         }
 
         /* Quote Carousel Indicator clicks*/
