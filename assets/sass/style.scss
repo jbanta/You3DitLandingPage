@@ -92,6 +92,13 @@ a {
   cursor: pointer;
   @extend .bold;
   @include btn-shadow();
+  transition: .2s;
+}
+
+.btn:hover {
+  background: white;
+  color: $red;
+  transition: .2s;
 }
 
 .sectitle {
@@ -110,6 +117,25 @@ a {
 .green-section {
   background-color: $darkgreen;
   height: 400px;
+}
+
+.link-anim {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: -1px;
+    background: $black;
+    height: 2px;
+    transition: right .3s;
+  }
+  &:hover:before {
+    right: 0;
+  }
 }
 
 //HOME SECTION
@@ -315,4 +341,120 @@ a {
   @extend #makeithappen;
   font-size: 32px;
   padding-top: 40px;
+}
+
+//MARKETPLACE SECTION
+
+#marketplacebg {
+  position: absolute;
+  height: 280px;
+  left: 50%;
+}
+
+#marketplacebtn {
+  display: inline-block;
+  border: 3px $darkgreen solid;
+  background: none;
+  color: $darkgreen;
+  padding: 12px;
+  letter-spacing: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  @extend .bold;
+  transition: .2s;
+}
+
+#marketplacebtn:hover {
+  background: $darkgreen;
+  color: white;
+  transition: .2s;
+}
+
+#marketplace-graphic {
+  position: absolute;
+  width: 270px;
+  left: 700px;
+  top: 40px;
+}
+
+//BOTTOM SECTION
+
+#bottom-container {
+  background-color: $black;
+}
+
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+}
+
+#logo-bottom {
+  position: relative;
+  width: 60%;
+  padding: 50px 0;
+}
+
+.b-col-title {
+  padding: 60px 0 40px;
+  @extend .bold;
+  font-size: 18px;
+  color: white;
+}
+.b-col-sub {
+  color: #DCDCDC;
+  @extend .b-col-title;
+  padding: 0;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+.sm-icons {
+  width: 25px;
+  padding: 8px 10px 0 0;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  font-family: $font;
+  padding: 5px 0 5px 5px;
+  width: 180px;
+  border: 2px white solid;
+}
+#newsletterbtn {
+  position: relative;
+  border: 2px white solid;
+  color: white;
+  text-align: center;
+  padding: 10px 3px;
+  width: 180px;
+  letter-spacing: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  @extend .bold;
+  transition: .2s;
+}
+
+#newsletterbtn:hover {
+  background: white;
+  color: $black;
+  transition: .2s;
+}
+
+.link-anim-bottom {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: -1px;
+    background: #DCDCDC;
+    height: 2px;
+    transition: right .2s;
+  }
+  &:hover:before {
+    right: 0;
+  }
 }
