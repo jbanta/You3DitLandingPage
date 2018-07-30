@@ -80,6 +80,7 @@ a {
 .subtagline {
   position: relative;
   left: 2px;
+  font-size: 28px;
 }
 
 .btn {
@@ -173,6 +174,7 @@ a {
   color: $darkgreen;
   width: 500px;
   margin-top: 50px;
+  font-size: 16px;
 }
 
 
@@ -186,6 +188,9 @@ a {
   font-size: 14px;
   letter-spacing: .5px;
   line-height: 1.5em;
+}
+#notyears {
+  font-size: 28px;
 }
 .graphic-icon {
   position: absolute;
@@ -323,7 +328,7 @@ a {
   margin-top: 10px;
 }
 
-//LET'S MAKE IT HAPPE SECTION
+//LET'S MAKE IT HAPPEN SECTION
 
 #makeithappen {
   @extend .bold;
@@ -341,6 +346,14 @@ a {
   @extend #makeithappen;
   font-size: 32px;
   padding-top: 40px;
+}
+
+#contactus-btn {
+  position: relative;
+  height: 20px;
+  width: 140px;
+  top: 65px;
+  right: -200px;
 }
 
 //MARKETPLACE SECTION
@@ -362,6 +375,10 @@ a {
   cursor: pointer;
   @extend .bold;
   transition: .2s;
+}
+#marketplace-infottext {
+  margin-top: 20px;
+  width: 600px;
 }
 
 #marketplacebtn:hover {
@@ -406,6 +423,7 @@ a {
   padding: 0;
   line-height: 40px;
   font-size: 14px;
+  font-weight: 600;
 }
 
 .sm-icons {
@@ -456,5 +474,122 @@ input[type="text"] {
   }
   &:hover:before {
     right: 0;
+  }
+}
+
+
+
+
+// MEDIA QUERIES
+
+//1
+@media (max-width: 1100px){
+  .margin-container {
+    width: 90%;
+  }
+  #contactus-btn {
+    right:-100px;
+  }
+  #computer {
+    width: 250px;;
+    left: 590px;
+  }
+  #parts {
+    top: 280px;
+    width: 200px;
+    left: 720px;
+  }
+  #box {
+    width: 180px;
+    left: 450px;
+  }
+  #marketplace-graphic {
+    left: 650px;
+  }
+}
+
+//2
+@media (max-width: 985px){
+  #tagline {
+    font-size: 48px;
+  }
+  .sectitle {
+    font-size: 30px;
+  }
+  #notyears {
+    font-size: 22px;
+  }
+  #contactus-btn {
+    right:-100px;
+  }
+  #computer {
+    width: 250px;;
+    left: 520px;
+  }
+  #parts {
+    width: 200px;
+    left: 650px;
+  }
+  #box {
+    width: 180px;
+    left: 400px;
+  }
+  .info-text {
+    @extend .medium;
+    margin-top: 2px;
+    width: 400px;
+    color: $gray;
+    font-size: 12px;
+    letter-spacing: .5px;
+    line-height: 1.5em;
+  }
+  .quote-container {
+    width: 70%;
+  }
+  #marketplace-infottext {
+    width: 480px;
+  }
+  #marketplace-graphic {
+    left: 520px
+  }
+}
+
+//3
+@media (max-width: 920px){
+  #computer {
+    width: 250px;
+    left: 480px;
+  }
+  #parts {
+    width: 200px;
+    left: 600px;
+  }
+  #box {
+    width: 180px;
+    left: 370px;
+  }
+  #contactus-btn {
+    right:-80px;
+  }
+}
+
+//4
+@media (max-width: 850px){
+  #contactus-btn {
+    top: 65px;
+    right:-50px;
+  }
+  #makeithappen {
+    font-size: 50px;
+  }
+  #makeithappen-sub {
+    font-size: 26px;
+    padding-top: 58px;
+  }
+  #marketplace-graphic {
+    left: 460px
+  }
+  #marketplace-infottext {
+    width: 420px;
   }
 }

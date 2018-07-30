@@ -48,7 +48,8 @@ a {
 
 .subtagline {
   position: relative;
-  left: 2px; }
+  left: 2px;
+  font-size: 28px; }
 
 .btn {
   display: inline-block;
@@ -129,7 +130,8 @@ a {
 #questions {
   color: #376531;
   width: 500px;
-  margin-top: 50px; }
+  margin-top: 50px;
+  font-size: 16px; }
 
 .info-text {
   margin-top: 2px;
@@ -138,6 +140,9 @@ a {
   font-size: 14px;
   letter-spacing: .5px;
   line-height: 1.5em; }
+
+#notyears {
+  font-size: 28px; }
 
 .graphic-icon {
   position: absolute; }
@@ -270,6 +275,13 @@ a {
   font-size: 32px;
   padding-top: 40px; }
 
+#contactus-btn {
+  position: relative;
+  height: 20px;
+  width: 140px;
+  top: 65px;
+  right: -200px; }
+
 #marketplacebg {
   position: absolute;
   height: 280px;
@@ -285,6 +297,10 @@ a {
   font-size: 16px;
   cursor: pointer;
   transition: .2s; }
+
+#marketplace-infottext {
+  margin-top: 20px;
+  width: 600px; }
 
 #marketplacebtn:hover {
   background: #376531;
@@ -318,7 +334,8 @@ a {
   color: #DCDCDC;
   padding: 0;
   line-height: 40px;
-  font-size: 14px; }
+  font-size: 14px;
+  font-weight: 600; }
 
 .sm-icons {
   width: 25px;
@@ -363,3 +380,99 @@ input[type="text"] {
     transition: right .2s; }
   .link-anim-bottom:hover:before {
     right: 0; }
+
+@media (max-width: 1100px) {
+  .margin-container {
+    width: 90%; }
+
+  #contactus-btn {
+    right: -100px; }
+
+  #computer {
+    width: 250px;
+    left: 590px; }
+
+  #parts {
+    top: 280px;
+    width: 200px;
+    left: 720px; }
+
+  #box {
+    width: 180px;
+    left: 450px; }
+
+  #marketplace-graphic {
+    left: 650px; } }
+@media (max-width: 985px) {
+  #tagline {
+    font-size: 48px; }
+
+  .sectitle {
+    font-size: 30px; }
+
+  #notyears {
+    font-size: 22px; }
+
+  #contactus-btn {
+    right: -100px; }
+
+  #computer {
+    width: 250px;
+    left: 520px; }
+
+  #parts {
+    width: 200px;
+    left: 650px; }
+
+  #box {
+    width: 180px;
+    left: 400px; }
+
+  .info-text {
+    margin-top: 2px;
+    width: 400px;
+    color: #707070;
+    font-size: 12px;
+    letter-spacing: .5px;
+    line-height: 1.5em; }
+
+  .quote-container {
+    width: 70%; }
+
+  #marketplace-infottext {
+    width: 480px; }
+
+  #marketplace-graphic {
+    left: 520px; } }
+@media (max-width: 920px) {
+  #computer {
+    width: 250px;
+    left: 480px; }
+
+  #parts {
+    width: 200px;
+    left: 600px; }
+
+  #box {
+    width: 180px;
+    left: 370px; }
+
+  #contactus-btn {
+    right: -80px; } }
+@media (max-width: 850px) {
+  #contactus-btn {
+    top: 65px;
+    right: -50px; }
+
+  #makeithappen, #makeithappen-sub {
+    font-size: 50px; }
+
+  #makeithappen-sub {
+    font-size: 26px;
+    padding-top: 58px; }
+
+  #marketplace-graphic {
+    left: 460px; }
+
+  #marketplace-infottext {
+    width: 420px; } }
