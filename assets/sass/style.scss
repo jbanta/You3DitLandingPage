@@ -58,11 +58,11 @@ a {
   top: 0;
   left: 0;
   background: white;
-  z-index: 10;
   padding: 10px;
   overflow: hidden;
   margin: 0;
   @extend .bold;
+
 }
 
 .nav-links {
@@ -75,6 +75,26 @@ a {
   text-decoration: none;
   color: $black;
   text-align: center;
+  display: block;
+}
+
+#menubtn {
+  position: relative;
+  float: right;
+  right: 30px;
+  top: 7px;
+  cursor: pointer;
+  display: none;
+  width: 37px;
+}
+#menuX {
+  position: relative;
+  float: right;
+  right: 30px;
+  top: 7px;
+  cursor: pointer;
+  display: none;
+  width: 30px;
 }
 
 .subtagline {
@@ -117,7 +137,7 @@ a {
 
 .green-section {
   background-color: $darkgreen;
-  height: 400px;
+  height: 300px;
 }
 
 .link-anim {
@@ -153,6 +173,15 @@ a {
   left: 50%;
   transform: translateX(-50%);
 }
+
+#homebgfull {
+  height: 38%;
+  position: absolute;
+  z-index: -10;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
 #navbarlogo {
   width: 120px;
   position: relative;
@@ -179,7 +208,9 @@ a {
 
 
 //INFO SECTION
-
+ #section-info {
+   margin-top: 160px;
+ }
 .info-text {
   @extend .medium;
   margin-top: 2px;
@@ -210,6 +241,12 @@ a {
   left: 494px;
   top: 320px;
 }
+#ourprocess {
+  margin-top: 70px;
+}
+#workwithusbtn {
+  margin-top: 70px;
+}
 
 // PAST CLIENTS SECTION
 #past-clients-title {
@@ -230,13 +267,17 @@ a {
 .logo-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-
 }
 
 .logos {
   max-width: 120px;
   width: 60%;
   margin: auto;
+}
+
+.logorow2 {
+  position: relative;
+  left:110px;
 }
 
 
@@ -340,6 +381,7 @@ a {
 #makeithappen-sub-container {
   display: grid;
   grid-template-columns: auto auto;
+  padding-bottom: 90px;
 }
 
 #makeithappen-sub {
@@ -357,7 +399,9 @@ a {
 }
 
 //MARKETPLACE SECTION
-
+#marketplace-container {
+  height: 280px;
+}
 #marketplacebg {
   position: absolute;
   height: 280px;
@@ -375,6 +419,7 @@ a {
   cursor: pointer;
   @extend .bold;
   transition: .2s;
+  margin-top: 30px
 }
 #marketplace-infottext {
   margin-top: 20px;
@@ -407,7 +452,7 @@ a {
 
 #logo-bottom {
   position: relative;
-  width: 60%;
+  width: 200px;
   padding: 50px 0;
 }
 
@@ -484,6 +529,7 @@ input[type="text"] {
 
 //1
 @media (max-width: 1100px){
+
   .margin-container {
     width: 90%;
   }
@@ -602,8 +648,183 @@ input[type="text"] {
 }
 
 // MOBILE
+//5
 @media (max-width: 790px){
+  //NAVBAR
+  #menubtn {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    float: none;
+    color: $black;
+  }
+  #signin-btn {
+    width: 90px;
+    padding: 10px;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 300px;
+  }
+  #signin-btn:hover {
+    color: $red;
+  }
+  #about {
+    left: 60px;
+    top: 75px;
+  }
+  #contact {
+    left: 60px;
+    top: 150px;
+  }
+  #marketplace {
+    left: 60px;
+    top: 225px;
+  }
+
+  //HOME
+  #homebg {
+    display: none;
+  }
+  #homebgfull {
+    display: block;
+  }
+  #homebg-area {
+    height: auto;
+  }
   #tagline {
-    color: red;
+    padding-top: 50px;
+  }
+  #questions {
+    width: 100%;
+  }
+
+  // INFO
+  .graphic-icon {
+    padding: 40px 2% 0;
+    position: relative;
+  }
+  #computer {
+    width: 28%;
+    left: 0px;
+    top: 0px;
+  }
+  #parts {
+    width: 28%;
+    left: 00px;
+    top: 0px;
+  }
+  #box {
+    width: 28%;
+    left: 0px;
+    top: 0px;
+  }
+  #section-info {
+    margin-top: 110px;
+  }
+  #ourprocess {
+    margin-top: 40px;
+  }
+  #workwithusbtn {
+    margin: 40px 0;
+  }
+  .info-text {
+    width: 100%;
+  }
+
+  //LOGOS
+  .logo-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #logo-title {
+    font-size: 22px;
+  }
+  .logorow2 {
+    left: 0;
+  }
+  .logos {
+    padding-top: 40px;
+    width: 80%;
+  }
+
+  //LET'S MAKE IT HAPPEN
+  #makeithappen {
+    padding-top: 40px;
+  }
+  #makeithappen-sub-container {
+    display: block;
+    padding-bottom: 20px;
+  }
+  #contactus-btn {
+    margin: 40px 0;
+    top: 0;
+    left: 0;
+  }
+  #marketplace-infottext {
+    width: 100%;
+  }
+
+  //MARKETPLACE
+  #marketplace-container {
+    height: auto;
+  }
+  #marketplace-graphic {
+    display: none;
+  }
+  #marketplacebg {
+    display: none;
+  }
+  #marketplacebtn {
+    margin: 0 0 40px;;
+  }
+
+  // BOTTOM
+  .bottom-grid {
+    grid-template-rows: 100px 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  #bcol-title-0 {
+    display: none;
+  }
+  .b-col-title {
+    padding: 0 0 10px 0;
+  }
+  #b-col-sub-1 {
+    padding-top: 40px;
+  }
+  #b-col2 {
+    padding-top: 40px;
+  }
+  #b-col3 {
+    padding-top: 40px;
+  }
+}
+
+//6
+@media (max-width: 580px){
+  #tagline {
+    font-size: 40px
+  }
+
+  .quotebox {
+    display: block;
+  }
+  .quote-icon {
+    display: none;
+  }
+  .quote-container {
+    width: 90%;
+  }
+  .quote-text {
+    font-size: 12px;
+    padding: 20px 40px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 410px){
+  #tagline {
+    font-size: 26px;
   }
 }

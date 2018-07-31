@@ -18,12 +18,16 @@
   <body>
 
     <div class="navbar">
+      <img src="assets/img/menubtn.svg" id="menubtn" class="menu-controls">
+      <img src="assets/img/X.svg" id="menuX" class="menu-controls">
       <a href="#"><img src="assets/img/logoblackY3DI.png" alt="" href="#" id="navbarlogo"></a>
       <a href="#signin" class="nav-links btn" id="signin-btn">SIGN IN</a>
-      <a href="#marketplace" class="nav-links"><span class="link-anim">MARKETPLACE</span></a>
-      <a href="#contact" class="nav-links"><span class="link-anim">CONTACT</span></a>
-      <a href="#news" class="nav-links "><span class="link-anim">ABOUT</span></a>
+      <a href="#marketplace"  id="marketplace" class="nav-links"><span class="link-anim">MARKETPLACE</span></a>
+      <a href="#contact" id="contact" class="nav-links"><span class="link-anim">CONTACT</span></a>
+      <a href="#about" id="about" class="nav-links "><span class="link-anim">ABOUT</span></a>
+
     </div>
+
 
     <div class="container">
 
@@ -31,6 +35,9 @@
 
         <!-- graphic background -->
         <img src="assets/img/homebg.svg" alt="" id="homebg">
+
+        <!-- mobile bg -->
+        <img src="assets/img/homebgfull.svg" alt="" id="homebgfull">
 
         <!-- HOME SECTION -->
         <div class="margin-container" id="section-home">
@@ -51,13 +58,19 @@
         </div>
 
         <!-- INFO SECTION -->
-        <div class="margin-container" id="section-info" style="top: 160px;">
+        <div class="margin-container" id="section-info" style="">
           <div class="sectitle" id="">
             Rapid Product Development <BR>
             measured in hours<span id="notyears"> ...not years</span>
           </div>
 
-          <div class="minititle" style="margin-top: 70px;">OUR PROCESS</div>
+          <!-- GRAPHIC ICONS -->
+          <img src="assets/img/computer-graphic.svg" alt="" class="graphic-icon" id="computer">
+          <img src="assets/img/parts-graphic.svg" alt="" class="graphic-icon" id="parts">
+          <img src="assets/img/box-graphic.svg" alt="" class="graphic-icon" id="box">
+          <div class="minititle" id="ourprocess">OUR PROCESS</div>
+
+
           <div class="info-text">
             With top-tier mechanical design engineers and rapid prototyping experts, we provide on-demand,
             mechanical design engineering and prototyping services.
@@ -69,12 +82,9 @@
             speed and smart execution enabled by the tight integration of design and manufacturing.
           </div>
 
-          <div class="btn" style="margin-top: 70px;"> WORK WITH US </div>
+          <div class="btn" id="workwithusbtn" style=""> WORK WITH US </div>
 
-          <!-- GRAPHIC ICONS -->
-          <img src="assets/img/computer-graphic.svg" alt="" class="graphic-icon" id="computer">
-          <img src="assets/img/parts-graphic.svg" alt="" class="graphic-icon" id="parts">
-          <img src="assets/img/box-graphic.svg" alt="" class="graphic-icon" id="box">
+
         </div>
       </div>
 
@@ -96,12 +106,13 @@
           <img src="assets/img/logos/logo3.png" alt="" class="logos">
           <img src="assets/img/logos/logo4.png" alt="" class="logos">
           <img src="assets/img/logos/logo5.png" alt="" class="logos">
+
+          <img src="assets/img/logos/logo6.png" alt="" class="logos logorow2">
+          <img src="assets/img/logos/logo7.png" alt="" class="logos logorow2">
+          <img src="assets/img/logos/logo8.png" alt="" class="logos logorow2">
+          <img src="assets/img/logos/logo9.png" alt="" class="logos logorow2">
         </div>
-        <div class="logo-container" style="grid-template-columns: 1fr 1fr 1fr 1fr; width: 80%; margin: auto;">
-          <img src="assets/img/logos/logo6.png" alt="" class="logos">
-          <img src="assets/img/logos/logo7.png" alt="" class="logos">
-          <img src="assets/img/logos/logo8.png" alt="" class="logos">
-          <img src="assets/img/logos/logo9.png" alt="" class="logos">
+
         </div>
       </div>
 
@@ -168,7 +179,7 @@
       </div>
 
       <!-- LET'S MAKE IT HAPPEN -->
-      <div class="green-section" style="margin-top: 50px; height: 350px;">
+      <div class="green-section" style="margin-top: 50px; height:auto">
         <div class="margin-container">
           <div id="makeithappen">
             Let's make it happen.
@@ -186,7 +197,7 @@
       </div>
 
       <!-- MARKETPLACE SECTION -->
-      <div id="marketplace-container" style="height: 280px;">
+      <div id="marketplace-container" style="">
         <img src="assets/img/marketplacebg.svg" alt="" id="marketplacebg">
         <div class="margin-container">
           <div class="sectitle" style="padding-top: 48px;">
@@ -195,24 +206,25 @@
           <div class="info-text" id="marketplace-infottext">
             Where designers, fabricators, and makers in our community work together to bring a low-budget idea to life.
           </div>
-          <div id="marketplacebtn" style="margin-top: 30px">
+          <img src="assets/img/marketplacegraphic.svg" id="marketplace-graphic"> <BR>
+          <div id="marketplacebtn" style="">
             VISIT NOW
           </div>
-          <img src="assets/img/marketplacegraphic.svg" id="marketplace-graphic">
+
         </div>
 
       </div>
 
       <!-- BOTTOM SECTION -->
-      <div id="bottom-container" style="height: 320px;">
+      <div id="bottom-container" style="height: auto;">
         <div class="margin-container">
           <div class="bottom-grid">
             <div id="b-col0" class="">
               <img src="assets/img/logowhiteY3DI.png" id="logo-bottom">
             </div>
             <div id="b-col1 " class="">
-              <div class="b-col-title">You3Dit</div>
-              <div class="b-col-sub">
+              <div class="b-col-title" id="bcol-title-0">You3Dit</div>
+              <div class="b-col-sub" id="b-col-sub-1">
                 info@you3dit.com <BR>
                 344 20th Street <BR>
                 Oakland, CA 94607
@@ -327,6 +339,44 @@
           updateActivePos();
         });
 
+
+
+        //MENU BUTTON
+        let menuopen = false
+        $( ".menu-controls" ).click(function() {
+          console.log('click');
+          if (!menuopen) {
+            $( ".navbar" ).css("height", 380);
+            $( "#menubtn" ).css("display", 'none');
+            $( "#menuX" ).css("display", 'block');
+            $( ".nav-links" ).css("display", 'block');
+            menuopen = true;
+          } else {
+            $( ".navbar" ).css("height", 'auto');
+            $( "#menubtn" ).css("display", 'block');
+            $( "#menuX" ).css("display", 'none');
+            $( ".nav-links" ).css("display", 'none');
+            menuopen = false;
+
+          }
+          $(window).resize(function() {
+            if ($(window).width() >= 790) {
+              menuopen = false;
+              $( ".navbar" ).css("height", 'auto');
+              $( "#menubtn" ).css("display", 'none');
+              $( "#menuX" ).css("display", 'none');
+              $( ".nav-links" ).css("display", 'block');
+            } if ($(window).width() < 790) {
+              $( "#menubtn" ).css("display", 'block');
+              $( "#menuX" ).css("display", 'none');
+              if (!menuopen) {
+                $( ".nav-links" ).css("display", 'none');
+              }
+
+            }
+          });
+
+        });
 
       });
     </script>

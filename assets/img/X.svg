@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2530.937 19.504 25.844 26.156">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #343434;
+      }
+    </style>
+  </defs>
+  <g id="X" transform="translate(2527.989 13.021)">
+    <rect id="Rectangle_524" data-name="Rectangle 524" class="cls-1" width="31.739" height="4.809" rx="2.404" transform="translate(6.348 6.483) rotate(45)"/>
+    <path id="Path_549" data-name="Path 549" class="cls-1" d="M2.4,0h26.93a2.4,2.4,0,1,1,0,4.809H2.4A2.4,2.4,0,0,1,2.4,0Z" transform="translate(2.948 29.238) rotate(-45)"/>
+  </g>
+</svg>
