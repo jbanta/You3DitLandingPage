@@ -287,6 +287,7 @@ a {
   width: 100%;
   white-space: nowrap;
   position: relative;
+  margin-top: 80px;
 }
 
 .quote-container {
@@ -761,6 +762,8 @@ input[type="text"] {
     margin: 40px 0;
     top: 0;
     left: 0;
+    height: auto;
+    width: auto;
   }
   #marketplace-infottext {
     width: 100%;
@@ -807,7 +810,12 @@ input[type="text"] {
   #tagline {
     font-size: 40px
   }
-
+  .subtagline {
+    font-size: 6vw;
+  }
+  .quote-carousel {
+    margin-top: 40px;
+  }
   .quotebox {
     display: block;
   }
@@ -822,9 +830,28 @@ input[type="text"] {
     padding: 20px 40px;
     line-height: 20px;
   }
+  #questions {
+    font-size: 12px;
+  }
+  .btn {
+    font-size: 12px;
+  }
+  .sectitle {
+    font-size: 30px;
+  }
+  .info-text {
+    font-size: 12px;
+  }
+  .minititle {
+    font-size: 12px;
+  }
 }
+
 @media (max-width: 410px){
   #tagline {
-    font-size: 26px;
+    font-size: 9vw;
+  }
+  .sectitle {
+    font-size: 8vw;
   }
 }
