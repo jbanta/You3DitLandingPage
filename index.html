@@ -175,7 +175,7 @@
           </div>
           <div id="makeithappen-sub-container">
             <div id="makeithappen-sub">
-              Our clients are out #1 priority. <BR>
+              Our clients are our #1 priority. <BR>
               Become one now.
             </div>
             <div class="btn" id="contactus-btn" >
@@ -269,7 +269,7 @@
         $(window).resize(function() {
           activePos = ($(window).width() / 2) - ($(".quote-container").width() / 2) - (qindex * $(".quote-container").width());
           $(".quote-carousel").css("left", activePos);
-          console.log($(".quote-container").width());
+          console.log($(window).width());
         });
 
         updateActivePos(); //set pos on load

@@ -535,13 +535,8 @@ input[type="text"] {
     left: 400px;
   }
   .info-text {
-    @extend .medium;
-    margin-top: 2px;
     width: 400px;
-    color: $gray;
-    font-size: 12px;
-    letter-spacing: .5px;
-    line-height: 1.5em;
+    font-size: 13px;
   }
   .quote-container {
     width: 70%;
@@ -591,5 +586,24 @@ input[type="text"] {
   }
   #marketplace-infottext {
     width: 420px;
+  }
+  #computer {
+    width: 220px;
+  }
+  #parts {
+    width: 190px;
+    left: 530px;
+    top: 240px;
+  }
+  #box {
+    width: 170px;
+    top: 350px;
+  }
+}
+
+// MOBILE
+@media (max-width: 790px){
+  #tagline {
+    color: red;
   }
 }
