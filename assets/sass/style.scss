@@ -420,7 +420,7 @@ a {
   cursor: pointer;
   @extend .bold;
   transition: .2s;
-  margin-top: 30px
+  margin: 20px 0 50px;
 }
 #marketplace-infottext {
   margin-top: 20px;
@@ -435,8 +435,8 @@ a {
 
 #marketplace-graphic {
   position: absolute;
-  width: 270px;
-  left: 700px;
+  width: 250px;
+  left: 780px;
   top: 40px;
 }
 
