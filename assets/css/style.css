@@ -359,7 +359,8 @@ a {
   top: 40px; }
 
 #bottom-container {
-  background-color: #343434; }
+  background-color: #343434;
+  padding-bottom: 50px; }
 
 .bottom-grid {
   display: grid;
@@ -676,7 +677,7 @@ input[type="text"] {
     font-size: 6vw; }
 
   .quote-carousel {
-    margin-top: 40px; }
+    margin-top: 20px; }
 
   .quotebox {
     display: block; }
