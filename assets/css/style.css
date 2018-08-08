@@ -8,13 +8,13 @@ a {
   text-decoration: none;
   color: inherit; }
 
-.medium, .info-text, #logo-title, .quote-text {
+.medium, .info-text, #logo-title, .quote-text, #haas-table {
   font-weight: 500; }
 
-.semibold {
+.semibold, .request-title {
   font-weight: 600; }
 
-.bold, .navbar, .btn, .sectitle, .minititle, #tagline, #makeithappen, #makeithappen-sub, #marketplacebtn, .b-col-title, .b-col-sub, #newsletterbtn {
+.bold, .navbar, .btn, #request-button, .sectitle, .minititle, #contact-address, #tagline, #makeithappen, #makeithappen-sub, #marketplacebtn, .b-col-title, .b-col-sub, #newsletterbtn {
   font-weight: 700; }
 
 .reddot {
@@ -69,7 +69,7 @@ a {
   left: 2px;
   font-size: 28px; }
 
-.btn {
+.btn, #request-button {
   display: inline-block;
   background: #cb0000;
   color: white;
@@ -82,7 +82,7 @@ a {
   box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.5);
   transition: .2s; }
 
-.btn:hover {
+.btn:hover, #request-button:hover {
   background: white;
   color: #cb0000;
   transition: .2s; }
@@ -91,7 +91,7 @@ a {
   font-size: 35px;
   color: #376531; }
 
-.minititle {
+.minititle, #contact-address {
   color: #376531;
   letter-spacing: 3px;
   font-size: 14px; }
@@ -427,6 +427,54 @@ input[type="text"] {
   .link-anim-bottom:hover:before {
     right: 0; }
 
+.container-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 280px 280px;
+  grid-template-areas: "map contact" "map request"; }
+
+.contact-info {
+  grid-area: contact; }
+
+.request-info {
+  grid-area: request;
+  background-color: #376531; }
+
+.c-info-container {
+  margin: 60px;
+  position: relative;
+  max-width: 525px; }
+
+#contact-address {
+  line-height: 40px;
+  margin-top: 15px;
+  font-size: 16px; }
+
+.request-title {
+  font-size: 14px;
+  color: white;
+  letter-spacing: normal; }
+
+#request-button {
+  font-size: 12px;
+  padding: 7.8px;
+  position: relative;
+  left: -4px;
+  top: -.5px; }
+
+#haas-table {
+  display: grid;
+  position: relative;
+  margin: 10px 5px;
+  grid-template-columns: 140px 180px 180px;
+  grid-template-rows: 20px 20px 20px 20px;
+  color: white;
+  font-size: 12px; }
+
+#map {
+  width: 100%;
+  grid-area: map; }
+
 @media (max-width: 1100px) {
   .margin-container {
     width: 90%; }
@@ -696,7 +744,7 @@ input[type="text"] {
   #questions {
     font-size: 12px; }
 
-  .btn {
+  .btn, #request-button {
     font-size: 12px; }
 
   .sectitle {
@@ -705,7 +753,7 @@ input[type="text"] {
   .info-text {
     font-size: 12px; }
 
-  .minititle {
+  .minititle, #contact-address {
     font-size: 12px; } }
 @media (max-width: 410px) {
   #tagline {

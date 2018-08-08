@@ -524,7 +524,61 @@ input[type="text"] {
   }
 }
 
-
+//CONTACT PAGE
+.container-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 280px 280px;
+  grid-template-areas:
+    "map contact"
+    "map request";
+}
+.contact-info {
+    grid-area: contact;
+}
+.request-info {
+  grid-area: request;
+  background-color: $darkgreen;
+}
+.c-info-container {
+  margin: 60px;
+  position: relative;
+  max-width: 525px;
+}
+#contact-address {
+  @extend .minititle;
+  line-height: 40px;
+  margin-top: 15px;
+  font-size: 16px;
+}
+.request-title {
+  font-size: 14px;
+  color: white;
+  letter-spacing: normal;
+  @extend .semibold;
+}
+#request-button {
+  @extend .btn;
+  font-size: 12px;
+  padding: 7.8px;
+  position: relative;
+  left: -4px;
+  top: -.5px;
+}
+#haas-table {
+  display: grid;
+  position: relative;
+  margin: 10px 5px;
+  grid-template-columns: 140px 180px 180px;
+  grid-template-rows: 20px 20px 20px 20px;
+  color: white;
+  font-size: 12px;
+  @extend .medium;
+}
+#map {
+  width: 100%;
+  grid-area: map;
+}
 
 
 // MEDIA QUERIES
