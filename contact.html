@@ -115,21 +115,16 @@
       crossorigin="anonymous">
     </script>
 
-    <!-- google maps API-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASRs01GiommJhHMWEDJa1xm7v6bAKCHsU&callback=hqmap"></script>
-
     <script type="text/javascript">
       $(document).ready(function(){
 
-        function hqmap() {
-          var mapOptions = {
-              center: new google.maps.LatLng(51.5, -0.12),
-              zoom: 10,
-              mapTypeId: google.maps.MapTypeId.HYBRID
-          }
-          var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -34.397, lng: 150.644},
+            zoom: 8
+          });
         }
-
 
         //MENU BUTTON
         let menuopen = false
@@ -170,6 +165,7 @@
 
       });
     </script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASRs01GiommJhHMWEDJa1xm7v6bAKCHsU&callback=initMap"
+    async defer></script>
   </body>
 </html>
