@@ -8,13 +8,13 @@ a {
   text-decoration: none;
   color: inherit; }
 
-.medium, .info-text, #logo-title, .quote-text, #haas-table {
+.medium, .info-text, #logo-title, .quote-text, #haas-table, .desc-text, .rbox-text {
   font-weight: 500; }
 
 .semibold, .request-title {
   font-weight: 600; }
 
-.bold, .navbar, .btn, #request-button, .sectitle, .minititle, #contact-address, #tagline, #makeithappen, #makeithappen-sub, #marketplacebtn, .b-col-title, .b-col-sub, #newsletterbtn {
+.bold, .navbar, .btn, #request-button, .sectitle, .minititle, #contact-address, #tagline, #makeithappen, #makeithappen-sub, #marketplacebtn, .b-col-title, .b-col-sub, #newsletterbtn, .table-title {
   font-weight: 700; }
 
 .reddot {
@@ -478,6 +478,49 @@ input[type="text"] {
   height: 100%;
   grid-area: map; }
 
+.desc-text {
+  margin-top: 2px;
+  color: #707070;
+  font-size: 14px;
+  letter-spacing: .5px;
+  line-height: 2.5em; }
+
+.haaS-info {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin: 60px 0; }
+
+#s-packages {
+  font-size: 16px; }
+
+.table-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 28% 37% 33%;
+  grid-template-rows: 30px 30px 30px 30px;
+  margin: 10px 0; }
+
+.table-item {
+  font-size: 14px;
+  color: #707070;
+  line-height: 20px; }
+
+.request-box {
+  width: 330px;
+  height: 130px;
+  background-color: #376531;
+  margin: 20px 0 0 40px; }
+
+.rbox-content {
+  padding: 25px 0 20px 30px; }
+
+.rbox-text {
+  color: white;
+  font-size: 14px; }
+
+.rbox-input {
+  margin: 15px 0; }
+
 @media (max-width: 1100px) {
   .margin-container {
     width: 90%; }
@@ -611,7 +654,7 @@ input[type="text"] {
   #signin-btn:hover {
     color: #cb0000; }
 
-  #about {
+  #ourservices {
     left: 60px;
     top: 75px; }
 

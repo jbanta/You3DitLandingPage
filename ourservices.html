@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png">
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <title>You3Dit</title>
+
+
+  </head>
+  <body>
+
+    <div class="navbar">
+      <img src="assets/img/menubtn.svg" id="menubtn" class="menu-controls">
+      <img src="assets/img/X.svg" id="menuX" class="menu-controls">
+      <a href="index.html"><img src="assets/img/logoblackY3DI.png" alt="" href="#" id="navbarlogo"></a>
+      <a href="#signin" class="nav-links btn" id="signin-btn">SIGN IN</a>
+      <a href="#marketplace"  id="marketplace" class="nav-links"><span class="link-anim">MARKETPLACE</span></a>
+      <a href="contact.html" id="contact" class="nav-links"><span class="link-anim">CONTACT</span></a>
+      <a href="ourservices.html" id="ourservices" class="nav-links "><span class="link-anim">OUR SERVICES</span></a>
+    </div>
+
+    <div class="margin-container">
+       <div class="sectitle title-margin" style="margin: 50px 0 20px">Hardware as a Service (HaaS)</div>
+       <div class="desc-text">
+         Get all the mechanical design, engineering and prototyping services in one spot: You3Dit.  With our new Hardware as a Service program, you can choose the right level of service for your needs at a fraction of the cost you’d pay for both dedicated mechanical engineering & manufacturing resources. Sign up and add a mechanical engineering superpower to your team today.
+       </div>
+
+       <div class="haaS-info">
+         <div class="packages">
+           <div class="minititle" id="s-packages">SERVICE PACKAGES</div>
+           <div class="table-container">
+              <div class="table-title table-item">Package</div><div class="table-title table-item">Dedicated hrs. / mo.</div><div class="table-title table-item">Pricing</div>
+              <div class="table-info table-item">Starter</div><div class="table-info table-item">*</div><div class="table-info table-item">$$</div>
+              <div class="table-info table-item">Pro</div><div class="table-info table-item">**</div><div class="table-info table-item">$$$</div>
+              <div class="table-info table-item">Premium</div>  <div class="table-info table-item">***</div><div class="table-info table-item">$$$+</div>
+           </div>
+         </div>
+
+
+         <div class="request-box">
+           <div class="rbox-content">
+             <div class="rbox-text">
+               Request more info. on HaaS & our detailed capabilities here:
+             </div>
+             <div class="rbox-input">
+               <input type="text" name="email" placeholder="E-mail">
+               <span id="request-button">SUBMIT</span>
+             </div>
+           </div>
+         </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- BOTTOM SECTION -->
+    <div id="bottom-container" style="height: auto;">
+      <div class="margin-container">
+        <div class="bottom-grid">
+          <div id="b-col0" class="">
+             <a href="index.html"><img src="assets/img/logowhiteY3DI.png" id="logo-bottom"></a>
+          </div>
+          <div id="b-col1 " class="">
+            <div class="b-col-title" id="bcol-title-0">You3Dit</div>
+            <div class="b-col-sub" id="b-col-sub-1">
+              info@you3dit.com <BR>
+              344 20th Street <BR>
+              Oakland, CA 94607
+            </div>
+            <a href="https://www.facebook.com/You3Dit" target="_blank"><img src="assets/img/facebook.svg" class="sm-icons"></a>
+            <a href="https://twitter.com/You3Dit" target="_blank"><img src="assets/img/twitter.svg" class="sm-icons"></a>
+            <a href="https://www.instagram.com/You3Dit/" target="_blank"><img src="assets/img/instagram.svg" class="sm-icons"></a>
+          </div>
+          <div id="b-col2" class="">
+            <div class="b-col-title">Navigate</div>
+            <div class="b-col-sub">
+              <a href="ourservices.html" class="link-anim-bottom">OUR SERVICES</a> <BR>
+              <a href="contact.html" class="link-anim-bottom">CONTACT</a> <BR>
+              <a href="#" class="link-anim-bottom">MARKETPLACE</a> <BR>
+              <a href="#" class="link-anim-bottom">SIGN-IN</a>
+            </div>
+          </div>
+          <div id="b-col3" class="">
+            <div class="b-col-title">Newsletter Sign-up</div>
+            <div class="b-col-sub">
+              <input type="text" name="email" placeholder="E-mail"><br>
+            </div>
+            <div id="newsletterbtn">SUBSCRIBE</div>
+            <div class="b-col-sub" style="position:absolute; bottom: 0;">
+              <a href="https://blog.you3dit.com/" class="link-anim-bottom" target="_blank">CHECK OUT OUR BLOG</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <!-- jQuery Core 3.3.1 -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+
+    <!-- jQuery UI 1.12 -->
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+
+        //MENU BUTTON
+        let menuopen = false
+        $( ".menu-controls" ).click(function() {
+          console.log('click');
+          if (!menuopen) {
+            $( ".navbar" ).css("height", 380);
+            $( "#menubtn" ).css("display", 'none');
+            $( "#menuX" ).css("display", 'block');
+            $( ".nav-links" ).css("display", 'block');
+            menuopen = true;
+          } else {
+            $( ".navbar" ).css("height", 'auto');
+            $( "#menubtn" ).css("display", 'block');
+            $( "#menuX" ).css("display", 'none');
+            $( ".nav-links" ).css("display", 'none');
+            menuopen = false;
+          }
+
+          $(window).resize(function() {
+            if ($(window).width() >= 790) {
+              menuopen = false;
+              $( ".navbar" ).css("height", 'auto');
+              $( "#menubtn" ).css("display", 'none');
+              $( "#menuX" ).css("display", 'none');
+              $( ".nav-links" ).css("display", 'block');
+            } if ($(window).width() < 790) {
+              $( "#menubtn" ).css("display", 'block');
+              $( "#menuX" ).css("display", 'none');
+              if (!menuopen) {
+                $( ".nav-links" ).css("display", 'none');
+              }
+
+            }
+          });
+
+        });
+
+      });
+    </script>
+  </body>
+</html>
