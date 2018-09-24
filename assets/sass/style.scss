@@ -10,9 +10,9 @@ $lightgreen : #A6D069;
 
 //button shadow
 @mixin btn-shadow() {
-  -webkit-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.5);
-  -moz-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.5);
-  box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.5);
+  // -webkit-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.5);
+  // -moz-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.5);
+  // box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.5);
 }
 
 @mixin rounded-corner() {
@@ -51,6 +51,12 @@ a {
   margin: auto;
   position: relative;
   max-width: 1050px;
+}
+
+.margin-container-medium {
+  margin: auto;
+  position: relative;
+  max-width: 850px;
 }
 
 .navbar {
@@ -117,8 +123,8 @@ a {
 }
 
 .btn:hover {
-  background: white;
-  color: $red;
+  background: #ff2323;
+  // color: $red;
   transition: .2s;
 }
 
@@ -538,7 +544,6 @@ input[type="text"] {
     grid-area: contact;
 }
 .request-info {
-  grid-area: request;
   background-color: $darkgreen;
 }
 .c-info-container {
@@ -594,7 +599,7 @@ input[type="text"] {
   line-height: 2.5em;
 }
 
-.haaS-info {
+.two-col-grid {
   display: grid;
   grid-template-columns: 60% 40%;
   margin: 60px 0;
@@ -638,6 +643,13 @@ input[type="text"] {
   margin: 15px 0;
 }
 
+#btn-right {
+  position: relative;
+  float: right;
+  top: 100%;
+  transform: translateY(-100%);
+}
+
 
 // MEDIA QUERIES
 
@@ -645,6 +657,9 @@ input[type="text"] {
 @media (max-width: 1100px){
 
   .margin-container {
+    width: 90%;
+  }
+  .margin-container-medium {
     width: 90%;
   }
   #contactus-btn {
@@ -721,6 +736,19 @@ input[type="text"] {
   .c-info-container {
     margin-left: 60px;
   }
+
+  //OUR SERVICES
+  .two-col-grid {
+    grid-template-columns: 100%;
+  }
+  .request-box {
+    margin: 20px 0;
+  }
+  #btn-right {
+    position: relative;
+    float: left;
+    top: 100px;
+  }
 }
 
 //3
@@ -794,22 +822,22 @@ input[type="text"] {
     color: white;
     left: 50%;
     transform: translateX(-50%);
-    top: 300px;
+    top: 325px;
   }
   #signin-btn:hover {
     color: $red;
   }
   #ourservices {
     left: 60px;
-    top: 75px;
+    top: 100px;
   }
   #contact {
     left: 60px;
-    top: 150px;
+    top: 175px;
   }
   #marketplace {
     left: 60px;
-    top: 225px;
+    top: 250px;
   }
 
   //HOME

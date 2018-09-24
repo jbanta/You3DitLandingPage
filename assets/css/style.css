@@ -25,6 +25,11 @@ a {
   position: relative;
   max-width: 1050px; }
 
+.margin-container-medium {
+  margin: auto;
+  position: relative;
+  max-width: 850px; }
+
 .navbar {
   width: 100%;
   top: 0;
@@ -77,14 +82,10 @@ a {
   letter-spacing: 3px;
   font-size: 16px;
   cursor: pointer;
-  -webkit-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.5);
   transition: .2s; }
 
 .btn:hover, #request-button:hover {
-  background: white;
-  color: #cb0000;
+  background: #ff2323;
   transition: .2s; }
 
 .sectitle {
@@ -437,7 +438,6 @@ input[type="text"] {
   grid-area: contact; }
 
 .request-info {
-  grid-area: request;
   background-color: #376531; }
 
 .c-info-container {
@@ -485,7 +485,7 @@ input[type="text"] {
   letter-spacing: .5px;
   line-height: 2.5em; }
 
-.haaS-info {
+.two-col-grid {
   display: grid;
   grid-template-columns: 60% 40%;
   margin: 60px 0; }
@@ -521,8 +521,17 @@ input[type="text"] {
 .rbox-input {
   margin: 15px 0; }
 
+#btn-right {
+  position: relative;
+  float: right;
+  top: 100%;
+  transform: translateY(-100%); }
+
 @media (max-width: 1100px) {
   .margin-container {
+    width: 90%; }
+
+  .margin-container-medium {
     width: 90%; }
 
   #contactus-btn {
@@ -588,7 +597,18 @@ input[type="text"] {
     grid-template-areas: "map map" "contact contact"; }
 
   .c-info-container {
-    margin-left: 60px; } }
+    margin-left: 60px; }
+
+  .two-col-grid {
+    grid-template-columns: 100%; }
+
+  .request-box {
+    margin: 20px 0; }
+
+  #btn-right {
+    position: relative;
+    float: left;
+    top: 100px; } }
 @media (max-width: 920px) {
   #computer {
     width: 250px;
@@ -649,22 +669,22 @@ input[type="text"] {
     color: white;
     left: 50%;
     transform: translateX(-50%);
-    top: 300px; }
+    top: 325px; }
 
   #signin-btn:hover {
     color: #cb0000; }
 
   #ourservices {
     left: 60px;
-    top: 75px; }
+    top: 100px; }
 
   #contact {
     left: 60px;
-    top: 150px; }
+    top: 175px; }
 
   #marketplace {
     left: 60px;
-    top: 225px; }
+    top: 250px; }
 
   #homebg {
     display: none; }
